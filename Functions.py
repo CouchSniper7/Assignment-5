@@ -16,7 +16,7 @@ def yourPlaceOfBirth() :                    #--
 # @return j after 7 times
 #
 def septapalooza(j, timesReturned = 7) : 
-    if timesReturned === 0 :
+    if timesReturned == 0 :
         return 0
     return j + septapalooza(j, timesReturned -1)
     
