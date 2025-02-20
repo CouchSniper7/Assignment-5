@@ -16,10 +16,9 @@ def yourPlaceOfBirth() :                    #--
 # @return j after 7 times
 #
 def septapalooza(j, timesReturned = 7) : 
-    total = j
-    if timesReturned > 0 :
-        total += septapalooza(j, timesReturned -1)
-    return total
+    if timesReturned === 0 :
+        return 0
+    return j + septapalooza(j, timesReturned -1)
     
 
 ## this function takes a value age that you pass it. If the age is greater than or equal to 18 the function returns True, otherwise it returns False. 
